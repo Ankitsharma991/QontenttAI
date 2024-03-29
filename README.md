@@ -15,7 +15,11 @@ eas build --p ios
 eas build --p all
 
 # use your own EAS credentials
+```
 
+```sh
+# to install apk run
+eas build:run -p android
 ```
 
 # Login Page
