@@ -11,6 +11,8 @@ import { useState } from "react";
 import CartIcon from "../../assets/cart.png";
 import SearchIcon from "../../assets/search.png";
 import IMG from "../../assets/img.png";
+import FoodItems from "./FoodItems";
+import DialPad from "./DialPad";
 
 const Dashboard = () => {
   const [isPressed, setIsPressed] = useState(false);
@@ -19,11 +21,6 @@ const Dashboard = () => {
   const handlePressIn = (item) => {
     setIsPressed(true);
     setPressedItem(item);
-  };
-
-  const handlePressOut = () => {
-    setIsPressed(false);
-    setPressedItem(null);
   };
 
   const dummyHeader = ["All", "🍔 Breakfast", "🍹 Drink", "🍕 Snack"];
@@ -88,6 +85,12 @@ const Dashboard = () => {
         <Text style={styles.foodText}>Seafood 🦐</Text>
         <Text style={styles.allFoodText}>See all</Text>
       </View>
+
+      {/* Food Items */}
+      <FoodItems />
+
+      {/* Dial-pad */}
+      <DialPad />
     </View>
   );
 };
