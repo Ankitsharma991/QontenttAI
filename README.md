@@ -8,6 +8,12 @@ npm install -g eas-cli
 # Build Android application run:
 eas build -p android
 
+# To Build ios application run:
+eas build --p ios
+
+# To Build for all platform (ios and android) run
+eas build --p all
+
 # use your own EAS credentials
 
 ```
